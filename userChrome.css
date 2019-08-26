@@ -1,4 +1,4 @@
-@import url('file:///home/gentoo/.cache/wal/colors.css');
+@import url('file:///home/arch/.cache/wal/colors.css');
 
 @font-face {
   font-family: terminus;
@@ -70,7 +70,7 @@ toolbarbutton.bookmark-item
 }*/
 
 /* Fixing tabGroups menu */
-#tabGroups-tabview-button .toolbarbutton-text {
+/* #tabGroups-tabview-button .toolbarbutton-text {
   max-height: inherit !important;
 }
 toolbar {
@@ -78,7 +78,7 @@ toolbar {
 }
 toolbar .toolbarbutton-1 {
   padding: 3px 2px !important;
-}
+} */
 
 /*
  * Description: Makes the activity stream page look decent with the dark theme.
