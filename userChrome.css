@@ -1,228 +1,121 @@
-@import url('file:///home/arch/.cache/wal/colors.css');
+@import url("file:///home/arch/.cache/wal/colors.css");
 
 @font-face {
   font-family: terminus;
   src: url(terminus.ttf);
 }
-
-*{
-    background-color: var(--color0) !important;*/
-    color: var(--color1) !important;
-    font-family: terminus !important;
-
+:root {
+  scrollbar-face-color: rgb(177, 12, 12);
+  scrollbar-track-color: rgb(207, 17, 17);
+  scrollbar-width: auto / thin / 20px;
+}
+:root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
+  background-color: unset !important;
+  border: unset !important;
+  padding: var(--toolbarbutton-inner-padding) !important;
+  border-radius: var(--toolbarbutton-border-radius) !important;
 }
 
-#urlbar {
-    background-color: var(--background) !important;
-    color: var(--color5) !important;
-    border-color: var(--color3)!important;
+#nav-bar-customization-target {
+  background-color: var(--color0) !important;
 }
-
-/*-----------------------------------*/
-
-/*Darken panels to match theme*/
-#main-window[lwthemetextcolor="bright"] .panel-arrow { filter: invert(33%); }
-.panel-subview-body,#appMenu-zoomReset-button,.panel-mainview,.panel-subviews {
-  color: var(--color5) !important;
-  background: var(--background) !important;}
-.panel-subview-footer,[class^="PanelUI-"] {
-  color: var(--color5) !important;
-  background: var(--background) !important;}
-
-/*Darken urlbar popups to match theme*/
-#PopupAutoCompleteRichResult .ac-title-text{
-  color: var(--color5) !important;
-  filter: opacity(.7);}
-#PopupAutoCompleteRichResult .autocomplete-richlistbox {
-  background: var(--background) !important;}
-#main-window[lwthemetextcolor="bright"] [class^="search-"]{
+#urlbar-container {
   color: var(--color1) !important;
-  background: var(--background) !important;}
-panel[type="autocomplete"],panel[type="autocomplete-richlistbox"],.autocomplete-history-popup {
-  border-width: 2px !important;
-  border-color: var(--color5) !important;
+  background-color: var(--color0) !important;
 }
-
-/*stops possible clashes with extension popups*/
-.webextension-popup-browser {
-  background: var(--background);}
-
-/*:root {
-  --tabs-border: transparent !important;  Remove borders from active tab and below tabs 
-}*/
-
-toolbarbutton.bookmark-item
-{
-  color: var(--color1) !important;
-  font-weight: bold !important;
-}
-
-/* Tab bar customization */
-:root:-moz-lwtheme-brighttext {
- --chrome-background-color: var(--background) !important;
- --chrome-color: var(--color1) !important;
- --chrome-secondary-background-color: var(--background) !important;
- /*--toolbox-border-bottom-color: #232324 !important;*/
-  --toolbox-border-bottom-color: var(--backrgound) !important;
-}
-/*.tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme {
-  color: #dddddd !important;
-}*/
-
-/* Fixing tabGroups menu */
-/* #tabGroups-tabview-button .toolbarbutton-text {
-  max-height: inherit !important;
-}
-toolbar {
-  min-height: 37px !important;
-}
-toolbar .toolbarbutton-1 {
-  padding: 3px 2px !important;
-} */
-
-/*
- * Description: Makes the activity stream page look decent with the dark theme.
- *
- * Screenshot: https://imgur.com/a/WcxGk
- *
- * Contributor(s): Andrei Cristian Petcu
- */
-
-.browserContainer {
-  background-color: var(--background, hsla(0,0%,100%,.8)) !important;
-}
-
-#sidebar {
-    background-color: var(--background) !important;
-}
-
-.sidebar-placesTree {
-    background-color: var(--background) !important;
-}
-
-
-/* recolor sidebar to match rest of dark  theme */
-#sidebar-header {
-    background-color: var(--background) !important;
-    color: var(--color1) !important;
-    border:0px !important;
-}
-
-#sidebar, #sidebar-header {
-  border-right: 0px solid var(--background) !important;
-}
-
-
-scrollbar, scrollbar * {
-  -moz-appearance: none !important;
-  background: none !important;
-  margin-left: -19px !important;
-}
-
 #urlbar {
-    background-color: var(--background) !important;
-    color: var(--color5) !important;
-    border-color: var(--color5)!important;
+  color: var(--color1) !important;
+  border-color: var(--color1) !important;
+  background-color: var(--color0) !important;
+}
+.tab-content {
+  background-color: var(--color0) !important;
+}
+.tabs-newtab-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
+}
+.tab-text {
+  color: var(--color1) !important;
+}
+.tab-close-button {
+  color: var(--color1) !important;
+}
+.arrowscrollbox-scrollbox {
+  background-color: var(--color0) !important;
+}
+#back-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-tab[selected="true"] {
-    background-color: var(--background) !important;
-    color: var(--color7) !important;
-    font-weight: bold !important;
+#forward-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-tab {
-    background-color: var(--background) !important;
-    color: var(--color2) !important;
-    font-weight: bold !important;
+#reload-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-#home-button,
-#back-button,
-#forward-button,
-#reload-button,
-#stop-reload-button{
-  color: var(--color5) !important;
+.close-icon {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
+}
+#close-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-/* Hide white bar. Not necessary, but helpful. */
-#sidebar-splitter {
-  opacity: 0 !important;
+#restore-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
+}
+#minimize-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-/* change up usercontext label */
-#userContext-icons{
-  background:var(--background)!important;
-  margin:auto 3px!important;
-  border-radius:2px!important;
-  padding:0 2px 0 5px!important;
-}
-#userContext-label{
-  color:var(--background) !important;
-}
-#userContext-indicator{
-  fill:var(--background)!important;
-  margin-right:2px!important;
-}
-#userContext-indicator[data-identity-icon="circle"]{
-  display:none!important;
+.scrollbutton-up {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-
-/*
- * Automatically hides the info/Firefox icon on the location bar when a website doesn't
- * have any permissions.
- *
- * Contributor(s): Madis0
- */
-
-/* Hide info icon for sites that don't have permissions */
-#urlbar :not(.grantedPermissions) #identity-icon {
-        transition: 300ms !important; /* Animate icon hiding */
-  opacity: 0 !important; /* Make icons transparent */
-  -moz-margin-end: -1.1em !important; /* Hide icons by offsetting them */
+#PanelUI-menu-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
+}
+#PanelUI-button {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-/* Show info icon on navbar hover, except for new tab page search icon */
-#urlbar[pageproxystate="valid"]:hover #identity-icon {
-        transition: 300ms !important; /* Animate icon showing */
-  opacity: 1 !important; /* Make icons opaque */
-  -moz-margin-end: initial !important; /* Use initial margins to show icons */
+#PersonalToolbar {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-
-/* Minimize sidebar header to a light blue stripe (except Bookmarks, History, Sync'd Tabs); appears normally on hover */
-#sidebar-box:not([sidebarcommand="viewBookmarksSidebar"]):not([sidebarcommand="viewHistorySidebar"]):not([sidebarcommand="viewTabsSidebar"])
-  #sidebar-header:not(:hover) {
-    max-height: 5px !important;
-    min-height: 5px !important;
-    padding: 0 !important;
-    background-color: var(--background) !important;
-    opacity: 1 !important;
-}
-#sidebar-box:not([sidebarcommand="viewBookmarksSidebar"]):not([sidebarcommand="viewHistorySidebar"]):not([sidebarcommand="viewTabsSidebar"])
-  #sidebar-header:not(:hover) #sidebar-switcher-target {
-    /* BAD NEWS: display: none !important; */
-    opacity: 0 !important;
+#PlacesToolbar {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-/*#minimize-button,
-#restore-button,{
-    display: none !important;
-}*/
-
-
-
-#tabbrowser-tabs ~ #alltabs-button,
-tabbrowser toolbarbutton[class^="scrollbutton"],
-#TabsToolbar toolbarbutton[class^="scrollbutton"],
-#TabsToolbar .tabbrowser-tab:after,
-#TabsToolbar .tabbrowser-tab:before {
-  display: none !important;
+.bookmark-item {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
 
-#content browser {
- margin-right: -14px !important;
- overflow-y: scroll;
- overflow-x: hidden;
+.findbar-container {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
+}
+
+.findbar-find-next {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
+}
+.findbar-find-previous {
+  color: var(--color1) !important;
+  background-color: var(--color0) !important;
 }
