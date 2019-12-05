@@ -4,12 +4,14 @@
   font-family: terminus;
   src: url(terminus.ttf);
 }
+
 :root {
   scrollbar-face-color: rgb(177, 12, 12);
   scrollbar-track-color: rgb(207, 17, 17);
   scrollbar-width: auto / thin / 20px;
 }
-:root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
+
+:root:not([uidensity="compact"]) #back-button>.toolbarbutton-icon {
   background-color: unset !important;
   border: unset !important;
   padding: var(--toolbarbutton-inner-padding) !important;
@@ -19,31 +21,44 @@
 #nav-bar-customization-target {
   background-color: var(--color0) !important;
 }
+
 #urlbar-container {
   color: var(--color1) !important;
   background-color: var(--color0) !important;
 }
+
 #urlbar {
   color: var(--color1) !important;
   border-color: var(--color1) !important;
   background-color: var(--color0) !important;
 }
+
+
+#tabbrowser-tabs {
+  background-color: var(--color0) !important;
+}
+
 .tab-content {
   background-color: var(--color0) !important;
 }
+
 .tabs-newtab-button {
   color: var(--color1) !important;
   background-color: var(--color0) !important;
 }
+
 .tab-text {
   color: var(--color1) !important;
 }
+
 .tab-close-button {
   color: var(--color1) !important;
 }
+
 .arrowscrollbox-scrollbox {
   background-color: var(--color0) !important;
 }
+
 #back-button {
   color: var(--color1) !important;
   background-color: var(--color0) !important;
@@ -63,6 +78,7 @@
   color: var(--color1) !important;
   background-color: var(--color0) !important;
 }
+
 #close-button {
   color: var(--color1) !important;
   background-color: var(--color0) !important;
@@ -72,6 +88,7 @@
   color: var(--color1) !important;
   background-color: var(--color0) !important;
 }
+
 #minimize-button {
   color: var(--color1) !important;
   background-color: var(--color0) !important;
@@ -86,6 +103,7 @@
   color: var(--color1) !important;
   background-color: var(--color0) !important;
 }
+
 #PanelUI-button {
   color: var(--color1) !important;
   background-color: var(--color0) !important;
@@ -115,6 +133,7 @@
   color: var(--color1) !important;
   background-color: var(--color0) !important;
 }
+
 .findbar-find-previous {
   color: var(--color1) !important;
   background-color: var(--color0) !important;
