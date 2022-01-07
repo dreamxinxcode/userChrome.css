@@ -1,140 +1,165 @@
-@import url("file:///home/arch/.cache/wal/colors.css");
+:root {
+    /* --background: #0E1B1B; */
+    --background: #0b1414;
+    --color1: #355E99;
+    --color2: #995882;
+    --color3: #5A515A;
+    --color4: #767D7C;
+    --color5: #b83c41;
+    --color6: #ccb685;
+    --color9: #355E99;
+    --color10: #995882;
+    --color11: #5A515A;
+    --color12: #767D7C;
+    --color13: #B83C41;
+    --color14: #E2A263;
+}
+
 
 @font-face {
-  font-family: terminus;
-  src: url(terminus.ttf);
+    font-family: 'Terminess';
+    src: url('./Terminess (TTF) Nerd Font Complete.ttf') format('truetype'); 
 }
 
-:root {
-  scrollbar-face-color: rgb(177, 12, 12);
-  scrollbar-track-color: rgb(207, 17, 17);
-  scrollbar-width: auto / thin / 20px;
+* {
+    font-family: Terminess;
+    /* background-color: #0E1B1B !important; */
+    color: var(--color6) !important;
+    scrollbar-color: yellow blue !important;
 }
 
-:root:not([uidensity="compact"]) #back-button>.toolbarbutton-icon {
-  background-color: unset !important;
-  border: unset !important;
-  padding: var(--toolbarbutton-inner-padding) !important;
-  border-radius: var(--toolbarbutton-border-radius) !important;
+#back-button, #forward-button {
+    color: var(--color2) !important;
 }
 
-#nav-bar-customization-target {
-  background-color: var(--color0) !important;
+#TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background {
+    box-shadow: none !important;
 }
 
-#urlbar-container {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+.urlbar-page-action, #urlbar-go-button, .search-go-button {
+    display: none !important;
 }
 
-#urlbar {
-  color: var(--color1) !important;
-  border-color: var(--color1) !important;
-  background-color: var(--color0) !important;
+#identity-box, #tracking-protection-icon-container {
+    display: none !important;
 }
 
+#TabsToolbar:not(:-moz-lwtheme) {
+    background-color: var(--background) !important;
+    color: var(--color6) !important;
+}
 
-#tabbrowser-tabs {
-  background-color: var(--color0) !important;
+hbox.tab-content[selected="true"] {
+  /* border-bottom: 2px solid #B83C41 !important;  */
+}
+
+.tab-label[selected="true"] {
+  color: var(--color5) !important;
+}
+
+.tab-icon-image {
+  display: none;
+}
+
+#toolbarbutton-icon {
+    color: var(--background) !important;
+}
+
+#tabs-newtab-button {
+  display: none;
+}
+
+toolbox#navigator-toolbox {
+    background-color: var(--background) !important;
+    color: var(--color6) !important;
+}
+
+#menubar-items {
+    color: var(--color5);
+}
+
+menupopup {
+    background-color: var(--background) !important;
+    color: var(--color6) !important;
+}
+
+menuitem {
+    background-color: var(--background) !important;
+    color: var(--color6) !important; 
 }
 
 .tab-content {
-  background-color: var(--color0) !important;
+    background-color: var(--background) !important;
+    color: var(--color6) !important;
 }
 
-.tabs-newtab-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+.browser-toolbar:not(.titlebar-color) {
+    background-image: none !important;
 }
 
-.tab-text {
-  color: var(--color1) !important;
+toolbar#nav-bar {
+    background-color: var(--background) !important;
+    color: var(--color6) !important; 
 }
 
-.tab-close-button {
-  color: var(--color1) !important;
+#urlbar-background, #searchbar {
+    background-color: var(--background) !important;
+    border: none !important;
 }
 
-.arrowscrollbox-scrollbox {
-  background-color: var(--color0) !important;
+#urlbar-input-container {
+    padding: 0px !important;
 }
 
-#back-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+.urlbar-input-box {
+        background-color: var(--background) !important;
+        color: var(--color6) !important;
 }
 
-#forward-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+#urlbar-background, #searchbar {
+    border-color: var(--color6) !important;
 }
 
-#reload-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+.urlbarView-title {
+    color: var(--color6) !important;
 }
 
-.close-icon {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+.urlbarView-url {
+    color: var(--color2)  !important;
 }
 
-#close-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+input:not([type="file"], [type="image"]):focus-visible, select:focus-visible, button:focus-visible, textarea:focus-visible {
+    outline-style: none !important;
 }
 
-#restore-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+#navigator-toolbox {
+    /* border-bottom: 1px solid #B83C41 !important; */
+    border-bottom: none !important;
 }
 
-#minimize-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+panel {
+    background-color: var(--background) !important;
 }
 
-.scrollbutton-up {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+.panel-subview-body {
+    background-color: var(--background) !important;
 }
 
-#PanelUI-menu-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
-}
-
-#PanelUI-button {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
-}
-
-#PersonalToolbar {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
-}
-
-#PlacesToolbar {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
-}
-
-.bookmark-item {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
-}
-
-.findbar-container {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
-}
-
-.findbar-find-next {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
-}
-
-.findbar-find-previous {
-  color: var(--color1) !important;
-  background-color: var(--color0) !important;
+#d {
+background-color: #0E1B1B;
+background-color: #EFDEA4;
+background-color: #995882;
+background-color: #995882;
+background-color: #767D7C;
+background-color: #B83C41;
+background-color: #E2A26A;
+background-color: #ECD39A;
+background-color: #666666;
+background-color: #B83C41;
+background-color: #995882;
+background-color: #5A515A;
+background-color: #767D7C;
+background-color: #B83C41;
+background-color: #B83C41;
+background-color: #ECD39A;
 }
