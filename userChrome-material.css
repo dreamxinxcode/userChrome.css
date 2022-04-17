@@ -1,5 +1,27 @@
 :root {
     /* --background: #0E1B1B; */
+    --background: #1e222a;
+    --color1: #355E99;
+    --color2: #98c379;
+    --color3: #5A515A;
+    --color4: #767D7C;
+    --color5: #c678dd;
+    --color6: #61afef;
+    --color9: #355E99;
+    --color10: #995882;
+    --color11: #5A515A;
+    --color12: #767D7C;
+    --color13: #e06c75;
+    --color14: #E2A263;
+}
+
+
+@font-face {
+    font-family: 'Terminess';
+    src: url('./JetBrainsMono-Regular.ttf') format('truetype'); 
+}
+/* 
+:root {
     --background: #0b1414;
     --color1: #355E99;
     --color2: #995882;
@@ -19,13 +41,17 @@
 @font-face {
     font-family: 'Terminess';
     src: url('./Terminess (TTF) Nerd Font Complete.ttf') format('truetype'); 
-}
+} */
 
 * {
     font-family: Terminess;
     /* background-color: #0E1B1B !important; */
-    color: var(--color6) !important;
+    color: var(--color2) !important;
     scrollbar-color: yellow blue !important;
+}
+
+body {
+    background-color: none !important;
 }
 
 #back-button, #forward-button {
@@ -53,8 +79,16 @@ hbox.tab-content[selected="true"] {
   /* border-bottom: 2px solid #B83C41 !important;  */
 }
 
+.tab-label {
+  font-size: .9rem;
+}
+
 .tab-label[selected="true"] {
   color: var(--color5) !important;
+}
+
+.tab-label[selected="false"] {
+  color: var(--color3) !important;
 }
 
 .tab-icon-image {
@@ -90,7 +124,7 @@ menuitem {
 
 .tab-content {
     background-color: var(--background) !important;
-    color: var(--color6) !important;
+    color: var(--color2) !important;
 }
 
 .browser-toolbar:not(.titlebar-color) {
@@ -112,8 +146,9 @@ toolbar#nav-bar {
 }
 
 .urlbar-input-box {
-        background-color: var(--background) !important;
-        color: var(--color6) !important;
+  background-color: var(--background) !important;
+  color: var(--color6) !important;
+  font-size: .8rem;
 }
 
 #urlbar-background, #searchbar {
@@ -133,7 +168,6 @@ input:not([type="file"], [type="image"]):focus-visible, select:focus-visible, bu
 }
 
 #navigator-toolbox {
-    /* border-bottom: 1px solid #B83C41 !important; */
     border-bottom: none !important;
 }
 
